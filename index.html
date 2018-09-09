@@ -140,7 +140,11 @@ var x = setInterval(function() {
 }, 1000);
 
 document.getElementById("btn").addEventListener('click', function(){
-    document.getElementById('eve').scrollIntoView({ behavior: 'smooth' });
+    document.getElementById('eve').scrollIntoView({
+      block: "start",
+      alignToTop: true,
+      behavior: "smooth"
+    });
 }, false)
 
 document.getElementById("menu").addEventListener('click', function(){
