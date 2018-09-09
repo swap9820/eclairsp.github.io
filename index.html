@@ -1,1 +1,168 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name="theme-color" content="#000000"><link rel="manifest" href="/flix/manifest.json"><link rel="shortcut icon" href="/flix/favicon.ico"><title>Flix</title><link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster|Roboto" rel="stylesheet"><script type="text/javascript">!function(i){if(i.search){var l={};i.search.slice(1).split("&").forEach(function(i){var a=i.split("=");l[a[0]]=a.slice(1).join("=").replace(/~and~/g,"&")}),void 0!==l.p&&window.history.replaceState(null,null,i.pathname.slice(0,-1)+(l.p||"")+(l.q?"?"+l.q:"")+i.hash)}}(window.location)</script><link href="/flix/static/css/main.5d2c0e90.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script src="/flix/build/bundle.js"></script><script type="text/javascript" src="/flix/static/js/main.e4e408d0.js"></script></body></html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="particles.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Barrio|Megrim|Monofett|Zilla+Slab+Highlight" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <div class="navigation">
+                <input type="checkbox" class="checkbox" id="check">
+                <label for="check" class="nav-btn">MENU</label>
+        
+                <div class="nav-background"></div>
+        
+                <nav class="nav">
+                    <ol class="list" id="menu">
+                        <li class="list-item"><a href="#head" class="link">Home</a></li>
+                        <li class="list-item"><a href="#eve" class="link">Events</a></li>
+                        <li class="list-item"><a href="#" class="link">CPL</a></li>
+                        <li class="list-item"><a href="#con" class="link">Contact Us</a></li>
+                        <li class="list-item"><a href="#" class="link">Sponsors</a></li>
+                    </ol>
+                </nav>
+        </div>
+            
+        <header class="head" id="head">
+
+            <span class="header">CSI-CATT</span>
+            <p class="error"><span>T</span>ech<span>ni</span>tu<span>de</span></p>
+            <p class="error error-1" id="demo"></p>
+            <div class="btn-center">
+                <div class="scroll-btn pulsate-fwd" id="btn"> ↓ </div>
+            </div>
+
+        </header>
+        
+        <section id="eve" class="events">
+            <div class="card-main">
+                <div class="card-deatils">
+                    <h4 class="card-name">Event 1</h4>
+                    <h4 class="id">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</h4>
+                </div>
+            </div>
+            <div class="card-main">
+                <div class="card-deatils">
+                    <h4 class="card-name">Event 1</h4>
+                    <h4 class="id">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</h4>
+                </div>
+            </div>
+            <div class="card-main">
+                <div class="card-deatils">
+                    <h4 class="card-name">Event 1</h4>
+                    <h4 class="id">Event info</h4>
+                </div>
+            </div>
+            <div class="card-main">
+                <div class="card-deatils">
+                    <h4 class="card-name">Event 1</h4>
+                    <h4 class="id">Event info</h4>
+                </div>
+            </div>
+            <div class="card-main">
+                <div class="card-deatils">
+                    <h4 class="card-name">Event 1</h4>
+                    <h4 class="id">Event info</h4>
+                </div>
+            </div>
+            <div class="card-main">
+                <div class="card-deatils">
+                    <h4 class="card-name">Event 1</h4>
+                    <h4 class="id">Event info</h4>
+                </div>
+            </div>
+            <div class="card-main">
+                <div class="card-deatils">
+                    <h4 class="card-name">Event 1</h4>
+                    <h4 class="id">Event info</h4>
+                </div>
+            </div>
+            <div class="card-main">
+                <div class="card-deatils">
+                    <h4 class="card-name">Event 1</h4>
+                    <h4 class="id">Event info</h4>
+                </div>
+            </div>
+            <div class="card-main">
+                <div class="card-deatils">
+                    <h4 class="card-name">Event 1</h4>
+                    <h4 class="id">Event info</h4>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact" id="con">
+            <div class="con-info"></div>
+            <div class="map"></div>
+        </section>
+
+    </div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 4, 2018 10:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = "<span>" + days + "d </span>" + "<span>" + hours + "h </span>" + "<span>"
+  + minutes + "m </span>" + "<span>" + seconds + "s </span>";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+document.getElementById("btn").addEventListener('click', function(){
+    document.getElementById('eve').scrollIntoView({ behavior: 'smooth' });
+}, false)
+
+document.getElementById("menu").addEventListener('click', function(){
+    document.getElementById('check').click();
+}, false)
+
+document.querySelectorAll("a[href^=\"#\"]").forEach((anchor) => {
+  anchor.addEventListener("click", function (ev) {
+    ev.preventDefault();
+
+    const targetElement = document.querySelector(this.getAttribute("href"));
+    targetElement.scrollIntoView({
+      block: "start",
+      alignToTop: true,
+      behavior: "smooth"
+    });
+  });
+});
+
+</script>
+
+<script src="main.js"></script>
+
+</body>
+</html>
