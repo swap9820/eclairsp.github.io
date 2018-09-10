@@ -48,9 +48,26 @@ canvas{
     left: 60px;
     position: absolute;
     font-size: 6em;  
-    color: #fff;
+    color: #FC6600;
     font-family: 'Megrim', cursive;
 }
+
+.tracking-in-expand {
+	animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }  
 
 .error:hover { 
     text-shadow: 0 0 200px #ffffff,0 0 80px #008000,0 0 6px #0000ff; 
@@ -98,7 +115,7 @@ canvas{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: #fff;
+    background: #FC6600;
     color: black;
     line-height: 65px;
     font-size: 3.5em;
@@ -138,34 +155,57 @@ canvas{
     -webkit-box-shadow: 15px 9px 29px -6px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 15px 9px 29px -6px rgba(0, 0, 0, 0.75);
     box-shadow: 15px 9px 29px -6px rgba(0, 0, 0, 0.75);
-    transition: transform 0.3s;
     width: 500px;
     margin: 20px;
-    border-radius: 5px; 
 }
 .card-main-deatils {
     padding: 2px 16px; 
 }
 
 .card-name {
-    text-align: center;
+    padding: 10px;
     font-size: 30px;
     margin: 0;
+    color: #FC6600;
     margin-top: 10px;
     margin-bottom: 10px; 
     font-family: 'Megrim', cursive;
-}
-.card-main:hover {
-    transform: scale(1.05);
-    -webkit-box-shadow: 15px 9px 29px -6px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 15px 9px 29px -6px rgba(0, 0, 0, 0.75);
-    box-shadow: 15px 9px 29px -6px rgba(0, 0, 0, 0.75); 
 }
 
 .id {
     padding: 10px;
     font-family: sans-serif;
 }
+
+.card-main:hover {
+    animation: wobble-hor-bottom 0.8s both;
+    -webkit-box-shadow: 15px 9px 29px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 15px 9px 29px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 15px 9px 29px -6px rgba(0, 0, 0, 0.75); 
+}
+
+@keyframes wobble-hor-bottom {
+    0%,
+    100% {
+      transform: translateX(0%);
+      transform-origin: 50% 50%;
+    }
+    15% {
+      transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+      transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+      transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+      transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+      transform: translateX(-6px) rotate(-1.2deg);
+    }
+  }  
 
 .contact {
     width: 83%;
@@ -199,11 +239,17 @@ canvas{
     border-radius: 50%;
     top: 60px;
     right: 60px;
-    background: #fff;
+    background: #FC6600;
     text-align: center;
-    line-height: 70px;
     font-family: sans-serif;
     z-index: 2000;
+}
+
+.hamburger {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .nav-background {
@@ -213,7 +259,7 @@ canvas{
     border-radius: 50%;
     top: 65px;
     right: 65px;
-    background: radial-gradient(circle, #000000 0%, #dadada 100%);
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,255,255,0.8) 70%);
     z-index: 1000;
     transition: transform .8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
@@ -257,7 +303,7 @@ canvas{
 
 .link:active, .link:hover {
     background-position: 100%;
-    color: #9100ff;
+    color: #FC6600;
     transform: translateX(10px);
 }
 
