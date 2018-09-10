@@ -191,10 +191,10 @@ canvas{
       transform-origin: 50% 50%;
     }
     15% {
-      transform: translateX(-30px) rotate(-6deg);
+      transform: translateX(-10px) rotate(-3deg);
     }
     30% {
-      transform: translateX(15px) rotate(6deg);
+      transform: translateX(10px) rotate(3deg);
     }
     45% {
       transform: translateX(-15px) rotate(-3.6deg);
@@ -261,7 +261,7 @@ canvas{
     right: 65px;
     background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,255,255,0.8) 70%);
     z-index: 1000;
-    transition: transform .8s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition: transform .5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 .nav {
@@ -316,13 +316,17 @@ canvas{
     opacity: 1;
 }
 
-@media only screen and (max-width: 400px) {
-    .link:link, .link:visited {
-        font-size: 2em;
-    }
-}
-
 @media only screen and (max-width: 600px) {
+
+    .btn-center{
+        display: none;
+        position: block;
+    }
+
+    .head {
+        height: 50vh;
+    }
+
     .nav-background {
         top: 25px;
         right: 25px;
@@ -347,5 +351,22 @@ canvas{
     .nav-btn {
         top: 20px;
         right: 20px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .link:link, .link:visited {
+        font-size: 2em;
+    }
+
+    .head {
+        height: 60vh;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .head {
+        height: 70vh;
     }
 }
